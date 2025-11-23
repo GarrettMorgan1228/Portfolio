@@ -2,13 +2,15 @@
 function Header() {
     return(
         <header className="header">
-            <h1>Garrett Morgan</h1>
-            <nav className="nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div className="inner-header">
+                <h1 className="header-title">Garrett's Portfolio</h1>
+                <nav className="nav">
+                    <a href="#home" className="nav-link">Home</a>
+                    <a href="#about" className="nav-link">About</a>
+                    <a href="#projects" className="nav-link">Projects</a>
+                    <a href="#contact" className="nav-link">Contact</a>
+                </nav>
+            </div>
         </header>
     );
 }
