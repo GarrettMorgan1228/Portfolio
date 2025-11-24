@@ -1,7 +1,7 @@
 body{
     background-color: hsl(0, 0%, 25%);
     color: hsl(0, 0%, 100%);
-    font-family: Roboto Mono;
+    font-family: "Roboto Mono", sans-serif;
 }
 .app{
     min-height: 100vh;
@@ -79,6 +79,6 @@ body{
     opacity: 0.75;
 }
 @font-face {
-    font-family: Roboto Mono;
-    src: url();
+    font-family: "Roboto Mono";
+    src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("ttf");
 }
