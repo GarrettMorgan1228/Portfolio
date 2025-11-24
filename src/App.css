@@ -1,7 +1,11 @@
 body{
-    background-color: hsl(0, 0%, 25%);
     color: hsl(0, 0%, 100%);
     font-family: "Roboto Mono", sans-serif;
+    background: 
+        radial-gradient(circle at top left, hsl(0, 0%, 16%), transparent 55%),
+        radial-gradient(circle at bottom right, hsla(0, 0%, 16%, 0.623), transparent 55%),
+        hsl(0, 0%, 35%);
+    ;
 }
 .app{
     min-height: 100vh;
@@ -13,7 +17,7 @@ body{
     background-color: hsla(231, 41%, 7%, 0.85);
     border-bottom: 2px solid hsla(215, 20%, 65%, 0.35);
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.6);
-    width: 80%;
+    width: 90%;
     align-self: center;
 }
 .inner-header{
@@ -62,16 +66,33 @@ body{
 }
 .main{
     grid-column: 2;
-    padding: 2rem 1.5rem 3rem;
+    padding: 2rem 2rem 3rem;
     border-left: 1px solid hsla(215, 20%, 65%, 0.35);
     border-right: 1px solid hsla(215, 20%, 65%, 0.35);
-    text-align: center;
 }
 .section{
+    background: hsla(210, 25%, 25%, 0.8);
+    background: 
+        radial-gradient(circle at top left, hsla(214, 24%, 13%, 0.8), transparent 25%),
+        radial-gradient(circle at bottom right, hsla(212, 22%, 12%, 0.8), transparent 65%),
+        hsl(208, 26%, 20%);
+    ;
     border: 1px solid hsla(215, 20%, 65%, 0.35);
     border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 25px;
+    padding: 2rem 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 10px 10px hsla(222, 47%, 11%, 0.4);
+}
+.section h2{
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.75rem;
+    text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+    color: hsl(220, 13%, 91%);
+}
+.section p{
+    font-size: 1.1em;
+    color: hsl(226, 68%, 88%);
 }
 .footer{
     padding: 1rem 3rem;
@@ -81,4 +102,31 @@ body{
 @font-face {
     font-family: "Roboto Mono";
     src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("ttf");
+}
+@media (max-width: 640px) {
+  .header-inner {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 1.05rem;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.85rem;
+    min-width: 0;
+  }
 }
