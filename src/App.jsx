@@ -9,25 +9,26 @@ function App() {
     <>
       <div className='app'>
         <Header/>
+        
+        <div className='page-layout'>
+          <main className='main'>
+            <Section id='home' title='Home'>
+              <p>Short intro goes here. Replace with more JSX later.</p>
+            </Section>
 
-        <main className='main'>
-          <Section id='home' title='Home'>
-            <p>Short intro goes here. Replace with more JSX later.</p>
-          </Section>
+            <Section id='about' title='About'>
+              <p>My name is Garrett Morgan and I like computers and science.</p>
+            </Section>
 
-          <Section id='about' title='About'>
-            <p>My name is Garrett Morgan and I like computers and science.</p>
-          </Section>
+            <ProjectsSection/>
 
-          <ProjectsSection/>
-
-          <Section id='contact' title='Contact'>
-            <p>Email: garrettstevenmorgan@gmail.com</p>
-          </Section>
-        </main>
-
-        <footer>
-          <small>© {new Date().getFullYear()} Garrett Steven Morgan</small>
+            <Section id='contact' title='Contact'>
+              <p>Email: garrettstevenmorgan@gmail.com</p>
+            </Section>
+          </main>
+        </div>
+        <footer className='footer'>
+          © <small>{new Date().getFullYear()} Garrett Steven Morgan</small>
         </footer>
       </div>
     </>
