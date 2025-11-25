@@ -27,7 +27,7 @@ function App() {
             <ProjectsSection/>
 
             <Section id='contact' title='Contact'>
-              <p>Email: garrettstevenmorgan@gmail.com</p>
+              <p><small>Email: garrettstevenmorgan@gmail.com</small></p>
             </Section>
           </main>
         </div>

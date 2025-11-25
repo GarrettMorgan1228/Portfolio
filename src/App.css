@@ -71,17 +71,16 @@ body{
     border-right: 1px solid hsla(215, 20%, 65%, 0.35);
 }
 .section{
-    background: hsla(210, 25%, 25%, 0.8);
     background: 
-        radial-gradient(circle at top left, hsla(214, 24%, 13%, 0.8), transparent 25%),
-        radial-gradient(circle at bottom right, hsla(212, 22%, 12%, 0.8), transparent 65%),
-        hsl(208, 26%, 20%);
+        radial-gradient(circle at top left, hsla(214, 21%, 6%, 0.8), transparent 35%),
+        radial-gradient(circle at bottom right, hsla(218, 20%, 8%, 0.8), transparent 65%),
+        hsl(208, 17%, 17%);
     ;
-    border: 1px solid hsla(215, 20%, 65%, 0.35);
+    border: 1px solid hsla(0, 0%, 0%, 0.15);
     border-radius: 15px;
     padding: 2rem 2rem 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 10px 10px 10px hsla(222, 47%, 11%, 0.4);
+    box-shadow: 10px 10px 10px hsla(222, 33%, 6%, 0.4);
     text-align: center;
 }
 .section h2{
@@ -93,6 +92,10 @@ body{
 .section p{
     font-size: 1.1em;
     color: hsl(226, 68%, 88%);
+}
+.project-card-links{
+    display: flex;
+    flex-direction: column;
 }
 .footer{
     padding: 1rem 3rem;
