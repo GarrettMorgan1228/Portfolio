@@ -9,11 +9,14 @@ function ProjectsSection() {
                     <p>An incremental game about punching/collecting pineapples.</p>
                     <div className="project-card-links">
                         <a target="_blank" href="https://pineapplepuncher.garrettstevenmorgan.com">
-                            Play Demo
+                            Visit Demo
                         </a>
                         <a target="_blank" href="https://github.com/GarrettMorgan1228/pineapplePuncher">
-                            Visit GitHub Repository
+                            GitHub Repo
                         </a>
+                    </div>
+                    <div className="project-authors">
+                        Developer: Garrett Morgan
                     </div>
                 </article>
                 
@@ -21,12 +24,15 @@ function ProjectsSection() {
                     <h3>Placeholder Project</h3>
                     <p>Nothing to see here yet.</p>
                     <div className="project-card-links">
-                        <a target="_blank" href="https://pineapplepuncher.garrettstevenmorgan.com">
-                            Play Demo
+                        <a target="_blank" href="" className="project-card-link">
+                            Visit Demo
                         </a>
-                        <a target="_blank" href="https://github.com/GarrettMorgan1228/pineapplePuncher">
-                            Visit GitHub Repository
+                        <a target="_blank" href="https://github.com/GarrettMorgan1228/" className="project-card-link">
+                            GitHub Repo
                         </a>
+                    </div>
+                    <div className="project-authors">
+                        Developer(s): ...
                     </div>
                 </article>
             </div>

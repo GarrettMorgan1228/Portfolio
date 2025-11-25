@@ -17,11 +17,10 @@ function App() {
             </Section>
 
             <Section id='about' title='About'>
-              <p>My name is Garrett Morgan and I am a Computer Science student finishing my AS
-                 at Clovis Community College. This page is meant to serve as not only a way for
-                 me to practice front-end programming, but also as a hub for me to host other
-                 projects I work on over time, enabling others to view my work in one
-                 centralized location. Please explore my projects I have listed below.</p>
+              <p>My name is Garrett Morgan, and I'm a Computer Science student finishing my
+                 A.S. at Clovis Community College. This site is both a place for me to practice
+                 and showcase front-end development and a central hub where I'll publish and
+                 document projects as I build them. Feel free to explore the projects below.</p>
             </Section>
 
             <ProjectsSection/>
