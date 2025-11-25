@@ -1,41 +1,24 @@
-import './App.css';
-import Header from './components/Header';
-import Section from './components/Section';
-import ProjectsSection from './components/ProjectsSection';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
-
   return (
-    <>
-      <div className='app'>
-        <Header/>
-        
-        <div className='page-layout'>
-          <main className='main'>
-            <Section id='home' title='Home'>
-              <p>Welcome to the landing page for Garrett's Computer Science project porfolio.</p>
-            </Section>
+    <div className="app">
+      <Header />
 
-            <Section id='about' title='About'>
-              <p>My name is Garrett Morgan, and I'm a Computer Science student finishing my
-                 A.S. at Clovis Community College. This site is both a place for me to practice
-                 and showcase front-end development and a central hub where I'll publish and
-                 document projects as I build them. Feel free to explore the projects below.</p>
-            </Section>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects/:slug" element={<ProjectDetail />} />
+      </Routes>
 
-            <ProjectsSection/>
-
-            <Section id='contact' title='Contact'>
-              <p><small>Email: garrettstevenmorgan@gmail.com</small></p>
-            </Section>
-          </main>
-        </div>
-        <footer className='footer'>
-          © <small>{new Date().getFullYear()} Garrett Steven Morgan</small>
-        </footer>
-      </div>
-    </>
+      <footer className="footer">
+        © <small>{new Date().getFullYear()} Garrett Steven Morgan</small>
+      </footer>
+    </div>
   );
 }
 
-export default App
+export default App;

@@ -1,4 +1,5 @@
 import Section from "./Section";
+import { Link } from "react-router-dom";
 
 function ProjectsSection() {
     return(
@@ -8,9 +9,10 @@ function ProjectsSection() {
                     <h3>Pineapple Puncher</h3>
                     <p>An incremental game about punching/collecting pineapples.</p>
                     <div className="project-card-links">
-                        <a target="_blank" href="https://pineapplepuncher.garrettstevenmorgan.com">
-                            Visit Demo
-                        </a>
+                        <Link to="/projects/pineapplepuncher" className="project-card-link">
+                            View Details
+                        </Link>
+
                         <a target="_blank" href="https://github.com/GarrettMorgan1228/pineapplePuncher">
                             GitHub Repo
                         </a>
@@ -24,9 +26,9 @@ function ProjectsSection() {
                     <h3>Placeholder Project</h3>
                     <p>Nothing to see here yet.</p>
                     <div className="project-card-links">
-                        <a target="_blank" href="" className="project-card-link">
-                            Visit Demo
-                        </a>
+                        <Link to="/projects/placeholder" className="project-card-link">
+                            View Details
+                        </Link>
                         <a target="_blank" href="https://github.com/GarrettMorgan1228/" className="project-card-link">
                             GitHub Repo
                         </a>
