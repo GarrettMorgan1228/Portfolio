@@ -18,11 +18,11 @@ const projects = [
     authors: "Developer: Garrett Morgan",
   },
   {
-    title: "Placeholder Project",
-    description: "Nothing to see here yet.",
-    detailsTo: "/projects/placeholder",
+    title: "AI Browser Assistant",
+    description: "A Chrome Extension to help users browse the web.",
+    detailsTo: "/projects/ai-chrome-extension",
     repoUrl: "https://github.com/GarrettMorgan1228/",
-    authors: "Developer(s): ...",
+    authors: "Developers: Jorel Abrantes, Garrett Morgan",
   },
 ];
 
