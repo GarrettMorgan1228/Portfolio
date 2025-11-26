@@ -23,6 +23,22 @@ function ProjectsSection() {
                 </article>
                 
                 <article className="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A hub to publish my projects and document what I learned.</p>
+                    <div className="project-card-links">
+                        <Link to="/projects/portfolio" className="project-card-link">
+                            View Details
+                        </Link>
+                        <a target="_blank" href="https://github.com/GarrettMorgan1228/portfolio" className="project-card-link">
+                            GitHub Repo
+                        </a>
+                    </div>
+                    <div className="project-authors">
+                        Developer: Garrett Morgan
+                    </div>
+                </article>
+                
+                <article className="project-card">
                     <h3>Placeholder Project</h3>
                     <p>Nothing to see here yet.</p>
                     <div className="project-card-links">

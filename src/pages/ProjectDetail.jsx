@@ -14,6 +14,21 @@ const projects = [
       "Repeatable upgrades with scaling costs",
       "Multiple save slots using localStorage",
       "Export / import save files as JSON",
+      "Live project deployment with Vercel + GitHub",
+      "Custom dedicated subdomain",
+      "Exposure to JavaScript, React + Vite",
+    ],
+  },
+  {
+    slug: "portfolio",
+    title: "Portfolio Website",
+    summary: "A hub to publish my projects and document what I learned.",
+    demoUrl: "https://garrettstevenmorgan.com",
+    codeUrl: "https://github.com/GarrettMorgan1228/portfolio",
+    bullets: [
+      "React's reusable component architecture",
+      "Custom domain and React Router redirects",
+      "Responsive layout and mobile-friendly styling",
     ],
   },
 ];

@@ -3,10 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import ProjectDetail from "./pages/ProjectDetail";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="app">
+      <ScrollToTop/>
       <Header />
 
       <Routes>
