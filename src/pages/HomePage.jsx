@@ -4,6 +4,12 @@ import ProjectsSection from "../components/ProjectsSection";
 function HomePage() {
     return(
         <div className='page-layout'>
+          <aside className="sidebar-left">
+            <div className="side-card">
+            <h3></h3>
+            </div>
+          </aside>
+
           <main className='main'>
             <Section id='home' title='Home'>
               <p>Welcome to the landing page for Garrett's Computer Science project porfolio.</p>
@@ -22,6 +28,12 @@ function HomePage() {
               <p><small>Email: garrettstevenmorgan@gmail.com</small></p>
             </Section>
           </main>
+
+          <aside className="sidebar-right">
+            <div className="side-card">
+            <h3></h3>
+            </div>
+          </aside>
         </div>
     );
 }

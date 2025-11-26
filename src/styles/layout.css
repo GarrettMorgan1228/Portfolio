@@ -1,0 +1,22 @@
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.page-layout{
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 960px) minmax(0, 1fr);
+}
+.main{
+    grid-column: 2;
+    padding: 2rem 2rem 3rem;
+    border-left: 1px solid hsla(215, 20%, 65%, 0.35);
+    border-right: 1px solid hsla(215, 20%, 65%, 0.35);
+}
+.footer{
+    padding: 1rem 3rem;
+    text-align: center;
+    opacity: 0.75;
+}

@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import Section from "../components/Section";
+import "./ProjectDetail.css";
 
 const projects = [
   {

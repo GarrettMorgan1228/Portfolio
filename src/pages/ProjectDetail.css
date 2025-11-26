@@ -1,0 +1,14 @@
+
+.highlights-list{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: hsla(220, 13%, 91%);
+    border: 1px solid hsla(215, 20%, 65%, 0.7);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 10px 20px hsl(222, 47%, 11%);
+}
+.highlights-list-item{
+    padding: 15px;
+    color: hsl(221, 39%, 11%);
+}

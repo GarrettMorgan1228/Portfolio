@@ -1,61 +1,48 @@
 import Section from "./Section";
-import { Link } from "react-router-dom";
+import "./ProjectsSection.css";
+import ProjectCard from "./ProjectCard.jsx";
+
+const projects = [
+  {
+    title: "Pineapple Puncher",
+    description: "An incremental game about punching/collecting pineapples.",
+    detailsTo: "/projects/pineapplepuncher",
+    repoUrl: "https://github.com/GarrettMorgan1228/pineapplePuncher",
+    authors: "Developer: Garrett Morgan",
+  },
+  {
+    title: "Portfolio Website",
+    description: "A hub to publish my projects and document what I learned.",
+    detailsTo: "/projects/portfolio",
+    repoUrl: "https://github.com/GarrettMorgan1228/portfolio",
+    authors: "Developer: Garrett Morgan",
+  },
+  {
+    title: "Placeholder Project",
+    description: "Nothing to see here yet.",
+    detailsTo: "/projects/placeholder",
+    repoUrl: "https://github.com/GarrettMorgan1228/",
+    authors: "Developer(s): ...",
+  },
+];
 
 function ProjectsSection() {
-    return(
-        <Section id='projects' title='Projects'>
-            <div className="projects-grid">
-                <article className="project-card">
-                    <h3>Pineapple Puncher</h3>
-                    <p>An incremental game about punching/collecting pineapples.</p>
-                    <div className="project-card-links">
-                        <Link to="/projects/pineapplepuncher" className="project-card-link">
-                            View Details
-                        </Link>
-
-                        <a target="_blank" href="https://github.com/GarrettMorgan1228/pineapplePuncher">
-                            GitHub Repo
-                        </a>
-                    </div>
-                    <div className="project-authors">
-                        Developer: Garrett Morgan
-                    </div>
-                </article>
-                
-                <article className="project-card">
-                    <h3>Portfolio Website</h3>
-                    <p>A hub to publish my projects and document what I learned.</p>
-                    <div className="project-card-links">
-                        <Link to="/projects/portfolio" className="project-card-link">
-                            View Details
-                        </Link>
-                        <a target="_blank" href="https://github.com/GarrettMorgan1228/portfolio" className="project-card-link">
-                            GitHub Repo
-                        </a>
-                    </div>
-                    <div className="project-authors">
-                        Developer: Garrett Morgan
-                    </div>
-                </article>
-                
-                <article className="project-card">
-                    <h3>Placeholder Project</h3>
-                    <p>Nothing to see here yet.</p>
-                    <div className="project-card-links">
-                        <Link to="/projects/placeholder" className="project-card-link">
-                            View Details
-                        </Link>
-                        <a target="_blank" href="https://github.com/GarrettMorgan1228/" className="project-card-link">
-                            GitHub Repo
-                        </a>
-                    </div>
-                    <div className="project-authors">
-                        Developer(s): ...
-                    </div>
-                </article>
-            </div>
-        </Section>
-    );
+  return (
+    <Section id="projects" title="Projects">
+      <div className="projects-grid">
+        {projects.map((p) => (
+          <ProjectCard
+            key={p.detailsTo}
+            title={p.title}
+            description={p.description}
+            detailsTo={p.detailsTo}
+            repoUrl={p.repoUrl}
+            authors={p.authors}
+          />
+        ))}
+      </div>
+    </Section>
+  );
 }
 
 export default ProjectsSection;

@@ -1,3 +1,4 @@
+import "./Section.css";
 
 function Section({id, title, children}) {
     return(
