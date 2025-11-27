@@ -1,3 +1,15 @@
+import {
+  PineapplePuncherLeftSidebar,
+  PineapplePuncherRightSidebar,
+} from "../projects/PineapplePuncher.Sidebars";
+import {
+  PortfolioLeftSidebar,
+  PortfolioRightSidebar,
+} from "../projects/Portfolio.Sidebars";
+import {
+  AIBrowserAssistantLeftSidebar,
+  AIBrowserAssistantRightSidebar,
+} from "../projects/AIBrowserAssistant.Sidebars";
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import Section from "../components/Section";
@@ -19,6 +31,8 @@ const projects = [
       "Custom dedicated subdomain",
       "Exposure to JavaScript, React + Vite",
     ],
+    LeftSidebar: PineapplePuncherLeftSidebar,
+    RightSidebar: PineapplePuncherRightSidebar,
   },
   {
     slug: "portfolio",
@@ -31,6 +45,8 @@ const projects = [
       "Custom domain and React Router redirects",
       "Responsive layout and mobile-friendly styling",
     ],
+    LeftSidebar: PortfolioLeftSidebar,
+    RightSidebar: PortfolioRightSidebar,
   },
   {
     slug: "ai-chrome-extension",
@@ -40,6 +56,8 @@ const projects = [
     codeUrl: "https://github.com/GarrettMorgan1228/portfolio",
     bullets: [
     ],
+    LeftSidebar: AIBrowserAssistantLeftSidebar,
+    RightSidebar: AIBrowserAssistantRightSidebar,
   },
 ];
 
@@ -66,8 +84,15 @@ function ProjectDetail() {
     );
   }
 
+  const Left = project.LeftSidebar;
+  const Right = project.RightSidebar;
+
   return (
-    <div className="page-layout">
+    <div className="page-layout three-col-layout">
+      <aside className="page-sidebar left">
+        {Left ? <Left project={project}/> : null}
+      </aside>
+
       <main className="main">
         <Section title={project.title}>
           <p>{project.summary}</p>
@@ -97,6 +122,10 @@ function ProjectDetail() {
           </p>
         </Section>
       </main>
+      
+      <aside className="page-sidebar right">
+        {Right ? <Right project={project}/> : null}
+      </aside>
     </div>
   );
 }
