@@ -21,10 +21,11 @@ function HomePage() {
 
           <Section id="about" title="About">
             <p>
-              My name is Garrett Morgan, and I'm a Computer Science student finishing my
-              A.S. at Clovis Community College. This site is both a place for me to practice
-              and showcase front-end development and a central hub where I'll publish and
-              document projects as I build them. Feel free to explore the projects below.
+              My name is Garrett Morgan, and I'm a Computer Science student
+              finishing my A.S. at Clovis Community College. This site is both a
+              place for me to practice and showcase front-end development and a
+              central hub where I'll publish and document projects as I build
+              them. Feel free to explore the projects below.
             </p>
           </Section>
 

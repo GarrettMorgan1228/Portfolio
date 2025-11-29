@@ -1,38 +1,36 @@
-.project-card{
+.project-card {
   background-color: hsl(220, 13%, 91%);
   border-radius: 25px;
   padding: 1rem;
   border: 2px solid hsla(215, 20%, 65%, 0.4);
   box-shadow: 0px 10px 20px hsla(222, 47%, 11%, 0.6);
-  transition: transform 0.2s ease,
-              box-shadow 0.2s ease,
-              border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.project-card:hover{
+.project-card:hover {
   transform: translateY(-1px);
   box-shadow: 0px 15px 25px hsl(222, 47%, 11%);
   border-color: hsla(217, 91%, 60%, 0.5);
 }
 
-.project-card h3{
+.project-card h3 {
   color: hsl(222, 12%, 28%);
   text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
   font-size: 1.25rem;
 }
 
-.project-card p{
+.project-card p {
   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.75);
 }
 
-.project-card-links{
+.project-card-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.project-card-link{
+.project-card-link {
   font-size: 0.9rem;
   padding: 0.25rem 0.5rem;
   border-radius: 10px;
@@ -41,18 +39,17 @@
   text-decoration: none;
   color: hsl(221, 39%, 11%);
   background: hsla(220, 13%, 91%, 0.7);
-  transition: background-color 0.2s ease,
-              border-color 0.2s ease,
-              transform 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.project-card-link:hover{
+.project-card-link:hover {
   transform: translateY(-1px);
   background: hsla(220, 100%, 91%, 0.7);
   border-color: hsla(217, 91%, 60%, 0.5);
 }
 
-.project-authors{
+.project-authors {
   padding: 1rem 3rem;
   color: hsla(221, 39%, 11%, 0.75);
   font-size: 0.8rem;

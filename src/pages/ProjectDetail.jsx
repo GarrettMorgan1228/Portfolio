@@ -22,7 +22,8 @@ const projects = [
   {
     slug: "pineapplepuncher",
     title: "Pineapple Puncher",
-    summary: "An incremental clicker game built with JavaScript and React + Vite.",
+    summary:
+      "An incremental clicker game built with JavaScript and React + Vite.",
     demoUrl: "https://pineapplepuncher.garrettstevenmorgan.com",
     codeUrl: "https://github.com/GarrettMorgan1228/pineapplePuncher",
     bullets: [
@@ -56,11 +57,11 @@ const projects = [
   {
     slug: "ai-browser-assistant",
     title: "AI Browser Assistant",
-    summary: "Collaborative in-class project with Jorel Abrantes to build an agentic Chrome side-panel assistant. Users can summarize the active page and ask context-aware questions powered by a generative AI API (e.g., Gemini). The project highlights MV3 extension architecture, page content extraction, async messaging between scripts, and persistence with Chrome Storage.",
+    summary:
+      "Collaborative in-class project with Jorel Abrantes to build an agentic Chrome side-panel assistant. Users can summarize the active page and ask context-aware questions powered by a generative AI API (e.g., Gemini). The project highlights MV3 extension architecture, page content extraction, async messaging between scripts, and persistence with Chrome Storage.",
     demoUrl: "https://garrettstevenmorgan.com",
     codeUrl: "https://github.com/GarrettMorgan1228/ai-browser-assistant",
-    bullets: [
-    ],
+    bullets: [],
     LeftSidebar: AIBrowserAssistantLeftSidebar,
     RightSidebar: AIBrowserAssistantRightSidebar,
     WriteUp: AIBrowserAssistantWriteUp,
@@ -70,10 +71,7 @@ const projects = [
 function ProjectDetail() {
   const { slug } = useParams();
 
-  const project = useMemo(
-    () => projects.find((p) => p.slug === slug),
-    [slug]
-  );
+  const project = useMemo(() => projects.find((p) => p.slug === slug), [slug]);
 
   if (!project) {
     return (
@@ -97,7 +95,7 @@ function ProjectDetail() {
   return (
     <div className="page-layout three-col-layout">
       <aside className="page-sidebar left">
-        {Left ? <Left project={project}/> : null}
+        {Left ? <Left project={project} /> : null}
       </aside>
 
       <main className="main">
@@ -105,32 +103,49 @@ function ProjectDetail() {
           <p>{project.summary}</p>
 
           <div className="project-card-links">
-            <a href={project.demoUrl} target="_blank" rel="noreferrer" className="project-card-link">
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card-link"
+            >
               View Product
             </a>
-            <a href={project.codeUrl} target="_blank" rel="noreferrer" className="project-card-link">
+            <a
+              href={project.codeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card-link"
+            >
               GitHub Repo
             </a>
-            <Link to="/" className="project-card-link">Back to Portfolio</Link>
+            <Link to="/" className="project-card-link">
+              Back to Portfolio
+            </Link>
           </div>
         </Section>
 
         <Section title="Highlights">
           <ul className="highlights-list">
             {project.bullets.map((b) => (
-              <li key={b} className="highlights-list-item">{b}</li>
+              <li key={b} className="highlights-list-item">
+                {b}
+              </li>
             ))}
           </ul>
         </Section>
 
         <Section title="Write-up">
-          {WriteUp ? <WriteUp project={project} /> : <p>Nothing to see here yet.</p>}
+          {WriteUp ? (
+            <WriteUp project={project} />
+          ) : (
+            <p>Nothing to see here yet.</p>
+          )}
         </Section>
-
       </main>
-      
+
       <aside className="page-sidebar right">
-        {Right ? <Right project={project}/> : null}
+        {Right ? <Right project={project} /> : null}
       </aside>
     </div>
   );

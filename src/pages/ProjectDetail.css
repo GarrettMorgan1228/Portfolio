@@ -1,23 +1,22 @@
-
-.highlights-list{
-    display: inline-block;
-    margin: 0 auto;
-    background-color: hsla(220, 13%, 91%);
-    border: 1px solid hsla(215, 20%, 65%, 0.7);
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0px 10px 20px hsl(222, 47%, 11%);
+.highlights-list {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: hsla(220, 13%, 91%);
+  border: 1px solid hsla(215, 20%, 65%, 0.7);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 10px 20px hsl(222, 47%, 11%);
 }
-.highlights-list-item{
-    padding: 15px;
-    color: hsl(221, 39%, 11%);
+.highlights-list-item {
+  padding: 15px;
+  color: hsl(221, 39%, 11%);
 }
-.chip-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
-.chip{
+.chip {
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 10px;
@@ -25,21 +24,28 @@
   color: hsl(226, 68%, 88%);
   background: hsla(231, 41%, 7%, 0.35);
 }
-.side-link{
+.side-link {
   display: block;
   margin: 0.5rem;
   color: hsl(226, 68%, 88%);
   text-decoration: none;
 }
-.side-muted{
-    opacity: 0.85;
-    line-height: 1.5;
-    margin: 0;
+.side-muted {
+  opacity: 0.85;
+  line-height: 1.5;
+  margin: 0;
 }
-.side-card{
-  background:
-    radial-gradient(circle at top left, hsla(214, 21%, 6%, 0.7), transparent 45%),
-    radial-gradient(circle at bottom right, hsla(218, 20%, 8%, 0.7), transparent 70%),
+.side-card {
+  background: radial-gradient(
+      circle at top left,
+      hsla(214, 21%, 6%, 0.7),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      hsla(218, 20%, 8%, 0.7),
+      transparent 70%
+    ),
     hsla(231, 41%, 7%, 0.55);
   border: 1px solid hsla(215, 20%, 65%, 0.35);
   border-radius: 15px;
@@ -47,7 +53,7 @@
   box-shadow: 10px 10px 10px hsla(222, 33%, 6%, 0.35);
   margin-bottom: 1rem;
 }
-.side-card h3{
+.side-card h3 {
   margin: 0 0 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -55,25 +61,45 @@
   color: hsl(220, 13%, 91%);
   text-shadow: 2px 2px 3px hsla(0, 0%, 0%, 0.75);
 }
-.side-card ul{
+.side-card ul {
   padding-left: 1.1rem;
 }
-.side-card li{
+.side-card li {
   margin: 0.5rem;
   color: hsl(226, 68%, 88%);
   font-size: 0.9rem;
 }
-.side-card .side-link{
+.side-card .side-link {
   padding: 0.5rem 0.5rem;
   border-radius: 10px;
   border: 1px solid transparent;
-  transition: background-color 0.2s ease, 
-              border-color 0.2s ease, 
-              transform 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
 }
-.side-card .side-link:hover{
+.side-card .side-link:hover {
   background: hsla(215, 20%, 65%, 0.15);
   border-color: hsla(217, 91%, 60%, 0.35);
   transform: translateY(-1px);
   text-decoration: none;
+}
+.write-up-container {
+  display: flex;
+  flex-direction: row;
+}
+.write-up-card {
+  background: radial-gradient(
+      circle at top left,
+      hsla(214, 21%, 6%, 0.7),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      hsla(218, 20%, 8%, 0.7),
+      transparent 70%
+    ),
+    hsla(231, 41%, 7%, 0.55);
+  border: 1px solid hsla(215, 20%, 65%, 0.35);
+  border-radius: 15px;
+  padding: 15px;
+  width: 50%;
 }

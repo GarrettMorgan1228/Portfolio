@@ -1,24 +1,29 @@
-
-.section{
-    background: 
-        radial-gradient(circle at top left, hsla(214, 21%, 6%, 0.8), transparent 35%),
-        radial-gradient(circle at bottom right, hsla(218, 20%, 8%, 0.8), transparent 65%),
-        hsl(208, 17%, 17%);
-    ;
-    border: 1px solid hsla(0, 0%, 0%, 0.15);
-    border-radius: 15px;
-    padding: 2rem 2rem 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 10px 10px 10px hsla(222, 33%, 6%, 0.4);
-    text-align: center;
+.section {
+  background: radial-gradient(
+      circle at top left,
+      hsla(214, 21%, 6%, 0.8),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      hsla(218, 20%, 8%, 0.8),
+      transparent 65%
+    ),
+    hsl(208, 17%, 17%);
+  border: 1px solid hsla(0, 0%, 0%, 0.15);
+  border-radius: 15px;
+  padding: 2rem 2rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px 10px hsla(222, 33%, 6%, 0.4);
+  text-align: center;
 }
-.section h2{
-    letter-spacing: 0.1em;
-    font-size: 1.75rem;
-    text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
-    color: hsl(220, 13%, 91%);
+.section h2 {
+  letter-spacing: 0.1em;
+  font-size: 1.75rem;
+  text-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.75);
+  color: hsl(220, 13%, 91%);
 }
-.section p{
-    font-size: 1.1em;
-    color: hsl(226, 68%, 88%);
+.section p {
+  font-size: 1.1em;
+  color: hsl(226, 68%, 88%);
 }

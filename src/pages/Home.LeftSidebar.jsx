@@ -21,7 +21,9 @@ export default function HomeLeftSidebar() {
 
       <div className="side-card">
         <h3>Currently</h3>
-        <p className="side-muted">Building projects, writing better project write-ups.</p>
+        <p className="side-muted">
+          Building projects, writing better project write-ups.
+        </p>
       </div>
     </>
   );

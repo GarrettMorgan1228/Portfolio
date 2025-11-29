@@ -1,15 +1,20 @@
-
-@font-face{
-    font-family: "Roboto Mono";
-    src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
-    font-display: swap;
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
-body{
-    color: hsl(0, 0%, 100%);
-    font-family: "Roboto Mono", sans-serif;
-    background: 
-        radial-gradient(circle at top left, hsl(0, 0%, 16%), transparent 55%),
-        radial-gradient(circle at bottom right, hsla(0, 0%, 16%, 0.623), transparent 55%),
-        hsl(0, 0%, 35%);
-    ;
+body {
+  color: hsl(0, 0%, 100%);
+  font-family: "Roboto Mono", sans-serif;
+  background: radial-gradient(
+      circle at top left,
+      hsl(0, 0%, 16%),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      hsla(0, 0%, 16%, 0.623),
+      transparent 55%
+    ),
+    hsl(0, 0%, 35%);
 }
