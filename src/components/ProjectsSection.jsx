@@ -20,8 +20,8 @@ const projects = [
   {
     title: "AI Browser Assistant",
     description: "A Chrome Extension to help users browse the web.",
-    detailsTo: "/projects/ai-chrome-extension",
-    repoUrl: "https://github.com/GarrettMorgan1228/",
+    detailsTo: "/projects/ai-browser-assistant",
+    repoUrl: "https://github.com/GarrettMorgan1228/ai-browser-assistant",
     authors: "Developers: Jorel Abrantes, Garrett Morgan",
   },
 ];

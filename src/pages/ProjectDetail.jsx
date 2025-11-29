@@ -10,6 +10,9 @@ import {
   AIBrowserAssistantLeftSidebar,
   AIBrowserAssistantRightSidebar,
 } from "../projects/AIBrowserAssistant.Sidebars";
+import PineapplePuncherWriteUp from "../projects/PineapplePuncher.WriteUp";
+import PortfolioWriteUp from "../projects/Portfolio.WriteUp";
+import AIBrowserAssistantWriteUp from "../projects/AIBrowserAssistant.WriteUp";
 import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import Section from "../components/Section";
@@ -33,6 +36,7 @@ const projects = [
     ],
     LeftSidebar: PineapplePuncherLeftSidebar,
     RightSidebar: PineapplePuncherRightSidebar,
+    WriteUp: PineapplePuncherWriteUp,
   },
   {
     slug: "portfolio",
@@ -47,17 +51,19 @@ const projects = [
     ],
     LeftSidebar: PortfolioLeftSidebar,
     RightSidebar: PortfolioRightSidebar,
+    WriteUp: PortfolioWriteUp,
   },
   {
-    slug: "ai-chrome-extension",
+    slug: "ai-browser-assistant",
     title: "AI Browser Assistant",
     summary: "Collaborative in-class project with Jorel Abrantes to build an agentic Chrome side-panel assistant. Users can summarize the active page and ask context-aware questions powered by a generative AI API (e.g., Gemini). The project highlights MV3 extension architecture, page content extraction, async messaging between scripts, and persistence with Chrome Storage.",
     demoUrl: "https://garrettstevenmorgan.com",
-    codeUrl: "https://github.com/GarrettMorgan1228/portfolio",
+    codeUrl: "https://github.com/GarrettMorgan1228/ai-browser-assistant",
     bullets: [
     ],
     LeftSidebar: AIBrowserAssistantLeftSidebar,
     RightSidebar: AIBrowserAssistantRightSidebar,
+    WriteUp: AIBrowserAssistantWriteUp,
   },
 ];
 
@@ -86,6 +92,7 @@ function ProjectDetail() {
 
   const Left = project.LeftSidebar;
   const Right = project.RightSidebar;
+  const WriteUp = project.WriteUp;
 
   return (
     <div className="page-layout three-col-layout">
@@ -117,10 +124,9 @@ function ProjectDetail() {
         </Section>
 
         <Section title="Write-up">
-          <p>
-            Nothing to see here yet.
-          </p>
+          {WriteUp ? <WriteUp project={project} /> : <p>Nothing to see here yet.</p>}
         </Section>
+
       </main>
       
       <aside className="page-sidebar right">
