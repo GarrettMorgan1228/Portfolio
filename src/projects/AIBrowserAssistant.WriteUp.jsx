@@ -67,6 +67,37 @@ function AIBrowserAssistantWriteUp() {
         </div>
         <div className="write-up-card">
           <h4>Jorel A. - What I Learned</h4>
+          <p>
+            <small>
+              Going into this project, my experience was mainly in Python, C++, and the
+              data-structures and algorithmic thinking from class. I had never worked with
+              web technologies or built anything for a browser, so I knew I would be
+              learning everything from scratch. I created a simple learning roadmap to
+              understand the tools we needed and to make sure I could contribute
+              effectively throughout the project.
+              <br /><br />
+              I started by learning the fundamentals of HTML and CSS to understand how
+              pages are structured and styled. After that, I moved into JavaScript and
+              TypeScript, focusing on how functionality is added to UI elements and how
+              data flows through an application. Introducing React pushed me to think in
+              terms of components—how to break features into smaller parts, reuse logic,
+              and keep the project organized.
+              <br /><br />
+              When it came time to turn our React project into an actual Chrome
+              extension, I learned how extensions work under Chrome’s environment. I set
+              up and configured the manifest.json (MV3), which defines how the extension
+              loads, what scripts run where, and what permissions the extension needs.
+              Understanding this was key to bridging the gap between a normal web app and
+              a working extension.
+              <br /><br />
+              Overall, this project forced me to learn an entirely new tech stack—from
+              basic web development, to React, to the specifics of Chrome’s extension API.
+              It expanded my skillset beyond class assignments and gave me hands-on
+              experience building something functional from the ground up.
+              <br /><br />
+              ...
+            </small>
+          </p>
         </div>
         <p></p>
       </div>
