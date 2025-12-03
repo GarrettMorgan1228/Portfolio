@@ -45,14 +45,14 @@ function AIBrowserAssistantWriteUp() {
         ...
         <h3>Summarization Feature</h3>
         <img
-          src="../public/AI_Extension_Demo(1).png"
+          src="/AI_Extension_Demo(1).png"
           className="demo-img"
         ></img>
         <br />
         <br />
         <h3>Q&A Feature</h3>
         <img
-          src="../public/AI_Extension_Demo(2).png"
+          src="/AI_Extension_Demo(2).png"
           className="demo-img"
         ></img>
         <br />
@@ -183,8 +183,8 @@ function AIBrowserAssistantWriteUp() {
         MV3 environment. The final product shows that we can design, implement,
         and refine an AI-powered tool that solves a real problem for users. More
         importantly, it showed us how to learn new technologies quickly, divide
-        responsibilities effectively, and turn a concept into a functional and
-        polished result.
+        responsibilities effectively, manage our code through a GitHub
+        repository, and turn a concept into a functional and polished result.
         <br />
         <br />
         ...
