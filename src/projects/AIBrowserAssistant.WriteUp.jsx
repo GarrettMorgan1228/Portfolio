@@ -15,7 +15,6 @@ function AIBrowserAssistantWriteUp() {
         <br />
         ...
       </p>
-
       <h3>What We Built</h3>
       <p>
         We built an AI-powered Chrome Extension that lives in a side panel and
@@ -42,24 +41,31 @@ function AIBrowserAssistantWriteUp() {
         user-focused UI design.
         <br />
         <br />
-        ...
-        <h3>Summarization Feature</h3>
-        <img
-          src="/AI_Extension_Demo(1).png"
-          className="demo-img"
-        ></img>
-        <br />
-        <br />
-        <h3>Q&A Feature</h3>
-        <img
-          src="/AI_Extension_Demo(2).png"
-          className="demo-img"
-        ></img>
-        <br />
-        <br />
-        ...
       </p>
-
+      ...
+      <h3>Summarization Feature</h3>
+      <img src="/AI_Extension_Demo(1).png" className="demo-img"></img>
+      <br />
+      <br />
+      ...
+      <h3>Q&A Feature</h3>
+      <img src="/AI_Extension_Demo(2).png" className="demo-img"></img>
+      <br />
+      <br />
+      ...
+      <h3>Demonstration Video</h3>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/5FfXD_BdT5Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <br />
+      ...
       <div className="write-up-container">
         <div className="write-up-card">
           <h4>Garrett M. - What I Learned</h4>
@@ -171,7 +177,6 @@ function AIBrowserAssistantWriteUp() {
         </div>
         <p></p>
       </div>
-
       <h3>Conclusion</h3>
       <p>
         This project gave us more than a working Chrome extension. It gave us

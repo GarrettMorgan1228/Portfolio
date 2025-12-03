@@ -94,7 +94,7 @@ export function AIBrowserAssistantRightSidebar({ project }) {
       <div className="side-card">
         <h3>TO-DO LIST</h3>
         <ul>
-          <li>Record Video Demo</li>
+          <li>Nothing Right Now 🌞</li>
         </ul>
       </div>
     </>

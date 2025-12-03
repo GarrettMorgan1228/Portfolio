@@ -59,7 +59,7 @@ const projects = [
     title: "AI Browser Assistant",
     summary:
       "Collaborative in-class project with Jorel Abrantes to build an agentic Chrome side-panel assistant. Users can summarize the active page and ask context-aware questions powered by a generative AI API (e.g., Gemini). The project highlights MV3 extension architecture, page content extraction, async messaging between scripts, and persistence with Chrome Storage.",
-    demoUrl: "https://garrettstevenmorgan.com",
+    demoUrl: "https://www.youtube.com/watch?v=5FfXD_BdT5Y",
     codeUrl: "https://github.com/GarrettMorgan1228/ai-browser-assistant",
     bullets: [
       "Google Chrome Side Panel UI",
