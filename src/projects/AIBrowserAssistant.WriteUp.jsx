@@ -18,6 +18,28 @@ function AIBrowserAssistantWriteUp() {
 
       <h3>What We Built</h3>
       <p>
+        We built an AI-powered Chrome Extension that lives in a side panel and
+        assists users while they browse. The extension provides two core
+        capabilities: webpage summarization and page-grounded Q&A. When the user
+        opens the side panel and clicks “Summarize,” the extension extracts
+        readable text from the active tab (prioritizing the main content of the
+        page and using highlighted text when available). That content is then
+        sent to a generative AI model through the Gemini API, which returns a
+        concise overview and key takeaways that are displayed directly in the
+        side panel. In Q&A mode, the user can ask a question about the current
+        page, and the extension responds using only the extracted page content,
+        making answers more relevant to what the user is actually viewing.
+        <br />
+        <br />
+        Technically, the project is built with React + Vite for a fast
+        development workflow and a clean, responsive interface, and TypeScript
+        to keep the codebase consistent and easier to debug. The extension
+        follows the Manifest V3 architecture, separating UI concerns from
+        background logic and page interaction. We also use the Chrome Storage
+        API to persist settings such as the user’s API key and model preferences
+        across sessions. The result is a real, working browser assistant that
+        demonstrates modern extension development, API integration, and
+        user-focused UI design.
         <br />
         ...
       </p>
@@ -69,41 +91,45 @@ function AIBrowserAssistantWriteUp() {
           <h4>Jorel A. - What I Learned</h4>
           <p>
             <small>
-              Going into this project, my background was mainly in Python, C++, and the
-              algorithmic thinking from class. I had never worked with AI models, browser
-              automation, or Chrome extension architecture at this level. I knew I would
-              need to learn how LLMs work behind the scenes and how to integrate AI into a
-              real, user-facing product, so I created a clear plan to build the skills I
-              needed step by step.
+              Going into this project, my background was mainly in Python, C++,
+              and the algorithmic thinking from class. I had never worked with
+              AI models, browser automation, or Chrome extension architecture at
+              this level. I knew I would need to learn how LLMs work behind the
+              scenes and how to integrate AI into a real, user-facing product,
+              so I created a clear plan to build the skills I needed step by
+              step.
               <br />
               <br />
-              I focused first on understanding how large language models process prompts,
-              generate text, and handle context. Once I understood the fundamentals, I
-              learned how to structure prompts, manage model temperature, control output
-              behavior, and design prompts that consistently return useful responses. I
-              also began experimenting with model constraints, system instructions, and
-              multi-step reasoning chains to get predictable results.
+              I focused first on understanding how large language models process
+              prompts, generate text, and handle context. Once I understood the
+              fundamentals, I learned how to structure prompts, manage model
+              temperature, control output behavior, and design prompts that
+              consistently return useful responses. I also began experimenting
+              with model constraints, system instructions, and multi-step
+              reasoning chains to get predictable results.
               <br />
               <br />
-              A major part of my work was learning how to connect an AI model to our
-              extension through API calls. I learned how to format requests, send user
-              input to the model, receive structured output, and handle errors or token
-              limits. This taught me how to build stable interactions between the frontend
-              and the AI system without breaking the user experience.
+              A major part of my work was learning how to connect an AI model to
+              our extension through API calls. I learned how to format requests,
+              send user input to the model, receive structured output, and
+              handle errors or token limits. This taught me how to build stable
+              interactions between the frontend and the AI system without
+              breaking the user experience.
               <br />
               <br />
-              When it came time to deploy everything into a Chrome extension, I learned
-              how to adapt our logic into Chrome’s environment using a manifest.json
-              (MV3). Understanding background scripts, permissions, and message passing
-              allowed me to link the AI features with the extension interface and make the
-              model respond dynamically to user actions.
+              When it came time to deploy everything into a Chrome extension, I
+              learned how to adapt our logic into Chrome’s environment using a
+              manifest.json (MV3). Understanding background scripts,
+              permissions, and message passing allowed me to link the AI
+              features with the extension interface and make the model respond
+              dynamically to user actions.
               <br />
               <br />
-              Overall, I learned how to work with LLMs at a practical level—prompt
-              engineering, API integration, response handling, and connecting AI behavior
-              to real user interactions. The project pushed me beyond classroom material
-              and gave me hands-on experience building an AI-powered tool from the ground
-              up.
+              Overall, I learned how to work with LLMs at a practical
+              level—prompt engineering, API integration, response handling, and
+              connecting AI behavior to real user interactions. The project
+              pushed me beyond classroom material and gave me hands-on
+              experience building an AI-powered tool from the ground up.
               <br />
               <br />
               ...

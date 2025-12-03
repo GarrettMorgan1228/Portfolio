@@ -6,6 +6,11 @@ export function AIBrowserAssistantLeftSidebar({ project }) {
         <div className="chip-row">
           <span className="chip">React</span>
           <span className="chip">Vite</span>
+          <span className="chip">TypeScript</span>
+          <span className="chip">Chrome MV3</span>
+          <span className="chip">Gemini AI API</span>
+          <span className="chip">HTML</span>
+          <span className="chip">CSS</span>
         </div>
       </div>
 
@@ -59,6 +64,14 @@ export function AIBrowserAssistantLeftSidebar({ project }) {
         >
           ▶️Chrome MV3 Tutorial
         </a>
+        <a
+          className="side-link"
+          href="https://www.youtube.com/watch?v=4akqDpxFlm8"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ▶️Google AI Studio
+        </a>
         <p className="side-muted">
           Things I've found helpful in my study progression.
         </p>
@@ -81,10 +94,6 @@ export function AIBrowserAssistantRightSidebar({ project }) {
       <div className="side-card">
         <h3>TO-DO LIST</h3>
         <ul>
-          <li>Style Sidebar UI</li>
-          <li>Build App Into Repo</li>
-          <li>Complete Write Up</li>
-          <li>Add Code Screenshots</li>
           <li>Record Video Demo</li>
         </ul>
       </div>
