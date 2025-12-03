@@ -103,3 +103,7 @@
   padding: 15px;
   width: 50%;
 }
+
+.demo-img {
+  max-width: 820px;
+}

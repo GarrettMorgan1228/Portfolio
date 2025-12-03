@@ -41,6 +41,22 @@ function AIBrowserAssistantWriteUp() {
         demonstrates modern extension development, API integration, and
         user-focused UI design.
         <br />
+        <br />
+        ...
+        <h3>Summarization Feature</h3>
+        <img
+          src="../public/AI_Extension_Demo(1).png"
+          className="demo-img"
+        ></img>
+        <br />
+        <br />
+        <h3>Q&A Feature</h3>
+        <img
+          src="../public/AI_Extension_Demo(2).png"
+          className="demo-img"
+        ></img>
+        <br />
+        <br />
         ...
       </p>
 
@@ -81,6 +97,23 @@ function AIBrowserAssistantWriteUp() {
               as providing my React project with a manifest.json (MV3). This
               file is used to tell your application how and where to execute
               within Chrome's embedded environment.
+              <br />
+              <br />
+              We broke our project into seperate components and decided to go
+              the route of utilizing CSS modules for easier design scope and
+              consistency. I was able to learn about how keeping components
+              within their own scope with modules will prevent design conflicts
+              later on where different CSS classes may end up with the same name
+              but require different features.
+              <br />
+              <br />
+              This project seriously helped me discover I have a desire to
+              pursue front-end UI development in the future as that was the most
+              fun part of our process. It was definitely difficult, however
+              exciting, to get the API calling functional so once it was working
+              and we could focus on making the application look appealing, I
+              could appreciate the full process of our application's
+              development.
               <br />
               <br />
               ...
@@ -141,6 +174,18 @@ function AIBrowserAssistantWriteUp() {
 
       <h3>Conclusion</h3>
       <p>
+        This project gave us more than a working Chrome extension. It gave us
+        practical experience building a complete system that combines UI
+        development, browser architecture, and real AI integration. We each
+        started with different strengths, but by the end we both expanded our
+        skill sets into areas we had never worked with before, from
+        understanding how modern LLMs behave to deploying code inside Chrome’s
+        MV3 environment. The final product shows that we can design, implement,
+        and refine an AI-powered tool that solves a real problem for users. More
+        importantly, it showed us how to learn new technologies quickly, divide
+        responsibilities effectively, and turn a concept into a functional and
+        polished result.
+        <br />
         <br />
         ...
       </p>
